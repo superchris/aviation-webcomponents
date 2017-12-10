@@ -1,0 +1,13 @@
+{
+  "name": "aviation-webcomponents",
+  "version": "1.0.0",
+  "description": "An experiment",
+  "main": "index.js",
+  "author": "Chris Nelson",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.4",
+    "express": "^4.16.2",
+    "express-http-proxy": "^1.1.0"
+  }
+}

@@ -1,0 +1,20 @@
+<head>
+	<script type="text/javascript" src"./bower_components/webcomponentsjs/webcomponents-lite.min.js"></script>
+    <link rel="import" href="bower_components/leaflet-map/leaflet-map.html">
+    <style>
+      html, body {
+        margin: 0;
+        height: 100%;
+      }
+      leaflet-map {
+        height: 100%;
+      }
+    </style>
+	<script type="module" src="src/flight-nav.js"></script>
+	<script type="module" src="src/route-form.js"></script>
+	<script type="module" src="src/container.js"></script>
+</head>
+  <body>
+		<route-form></route-form>
+		<flight-nav></flight-nav>
+  </body>
