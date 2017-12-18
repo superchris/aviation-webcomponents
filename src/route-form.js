@@ -19,6 +19,7 @@ class RouteForm extends HTMLElement {
     `;
     this.$("input[type=button]").addEventListener("click", () => {
       this.dispatchEvent(new CustomEvent("routeSelected", {
+        bubbles: true,
         detail: {
           from: this.$("input[name=from]").value,
           to: this.$("input[name=to]").value

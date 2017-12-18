@@ -1,6 +1,7 @@
 <head>
 	<script type="text/javascript" src"./bower_components/webcomponentsjs/webcomponents-lite.min.js"></script>
     <link rel="import" href="bower_components/leaflet-map/leaflet-map.html">
+    <link rel="import" href="bower_components/paper-spinner/paper-spinner-lite.html">
     <style>
       html, body {
         margin: 0;
@@ -12,9 +13,11 @@
     </style>
 	<script type="module" src="src/flight-nav.js"></script>
 	<script type="module" src="src/route-form.js"></script>
+	<script type="module" src="src/route-spinner.js"></script>
 	<script type="module" src="src/container.js"></script>
 </head>
   <body>
 		<route-form></route-form>
+		<route-spinner></route-spinner>
 		<flight-nav></flight-nav>
   </body>
