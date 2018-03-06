@@ -1,5 +1,5 @@
 
-class FlightNav extends HTMLElement {
+export class FlightNav extends HTMLElement {
 
   constructor() {
     super();
