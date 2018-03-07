@@ -1,7 +1,10 @@
 import { FlightNav } from "./flight-nav.js";
-import { mount } from '@skatejs/bore';
+import { expect } from 'chai';
 
-test('flight-nav', () => {
-  const wrapper = mount("<flight-nav></flight-nav>");
-  expect(wrapper.all({localName: 'leaflet-map'}).length).toEqual(1);
+describe('flight-nav', () => {
+  it("works", () => {
+    document.body.appendChild(document.createElement("flight-nav"));
+    expect(document.querySelectorAll('flight-nav').length).to.equal(1);
+    expect(document.querySelectorAll('leaflet-map').length).to.equal(1);
+  });
 });

@@ -3,9 +3,12 @@ export class FlightNav extends HTMLElement {
 
   constructor() {
     super();
-    this.render();
   }
 
+  connectedCallback() {
+    this.render();
+  }
+  
   static get observedAttributes() {
     return ["route"];
   }
