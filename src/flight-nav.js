@@ -8,7 +8,7 @@ export class FlightNav extends HTMLElement {
   connectedCallback() {
     this.render();
   }
-  
+
   static get observedAttributes() {
     return ["route"];
   }
