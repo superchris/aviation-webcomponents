@@ -2,7 +2,7 @@
   "scripts": {
     "server": "live-server .",
     "proxy": "node server.js",
-    "test": "jest",
+    "test": "mocha-puppeteer src/*.test.js",
     "start": "concurrently --kill-others \"npm run proxy\" \"npm run server\""
   },
   "name": "aviation-webcomponents",
